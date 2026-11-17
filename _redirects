@@ -1,0 +1,6 @@
+# Rodent Control Lubbock: Cloudflare Pages redirects
+# Cloudflare Pages serves 404.html automatically and handles extensionless URLs natively.
+
+# Consolidated posts (301 to the canonical post)
+/blog/do-diy-mouse-traps-work-when-lubbock-homeowners-should-call-a-professional  /blog/diy-mouse-traps-vs-professional-rodent-control-lubbock  301
+/blog/rodent-removal-cost-lubbock-tx-what-to-expect  /blog/cost-of-rodent-control-in-lubbock-tx-pricing-for-rat-and-mice-removal-explained  301
