@@ -38,13 +38,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script type="application/ld+json">
-  {"@context": "https://schema.org", "@type": "Article", "headline": "Common Entry Points for Rats in Lubbock Houses: Roof Vents, Garages, and Foundations", "datePublished": "2026-11-17", "dateModified": "2026-11-17", "author": {"@type": "Person", "name": "Lubbock Rodent Control", "url": "https://rodentcontrollubbock.com/about"}, "publisher": {"@type": "Organization", "name": "Lubbock Rodent Control", "url": "https://rodentcontrollubbock.com/"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://rodentcontrollubbock.com/blog/common-entry-points-for-rats-in-lubbock-houses-garages-roof-vents-and-foundations"}, "image": "https://rodentcontrollubbock.com/images/blog/blog-exclusion-work.jpg"}</script>
+  {"@context": "https://schema.org", "@type": "Article", "headline": "Common Entry Points for Rats in Lubbock Houses: Roof Vents, Garages, and Foundations", "datePublished": "2026-11-17", "dateModified": "2026-11-23", "author": {"@type": "Person", "name": "Lubbock Rodent Control", "url": "https://rodentcontrollubbock.com/about"}, "publisher": {"@type": "Organization", "name": "Lubbock Rodent Control", "url": "https://rodentcontrollubbock.com/"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://rodentcontrollubbock.com/blog/common-entry-points-for-rats-in-lubbock-houses-garages-roof-vents-and-foundations"}, "image": "https://rodentcontrollubbock.com/images/blog/blog-exclusion-work.jpg"}</script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
-    {"@type":"ListItem","position":1,"name":"Home","item":"https://rodentcontrollubbock.com/"},
-    {"@type":"ListItem","position":2,"name":"Blog","item":"https://rodentcontrollubbock.com/blog/"},
-    {"@type":"ListItem","position":3,"name":"Common Rat Entry Points in Lubbock Houses","item":"https://rodentcontrollubbock.com/blog/common-entry-points-for-rats-in-lubbock-houses-garages-roof-vents-and-foundations"}
-  ]}</script>
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://rodentcontrollubbock.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://rodentcontrollubbock.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Common Rat Entry Points in Lubbock Houses", "item": "https://rodentcontrollubbock.com/blog/common-entry-points-for-rats-in-lubbock-houses-garages-roof-vents-and-foundations"}]}</script>
   <style>:root{--c-ink:#0F1419;--c-ink-soft:#2A2F36;--c-body:#2D3138;--c-muted:#5A6068;--c-rule:#E2E4E7;--c-surface:#FFFFFF;--c-bg:#FFFFFF;--c-bg-alt:#F4F4F4;--c-red:#CC0000;--c-red-deep:#A30000;--c-red-tint:#FFF0F0;--f-display:"Roboto Slab",Georgia,serif;--f-body:"Source Sans 3",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--fs-xs:.8125rem;--fs-sm:.9375rem;--fs-base:1.0625rem;--fs-lg:1.1875rem;--fs-2xl:1.75rem;--fs-3xl:2.25rem;--fs-4xl:2.875rem;--s-1:.25rem;--s-2:.5rem;--s-3:.75rem;--s-4:1rem;--s-5:1.5rem;--s-6:2rem;--s-7:3rem;--s-8:4rem;--s-9:6rem;--r-sm:4px;--r-md:6px;--r-lg:10px;--r-pill:999px;--sh-pop:0 4px 16px rgba(15,20,25,.10);--container:1180px;--container-narrow:840px}
 *,*::before,*::after{box-sizing:border-box}
 body{margin:0;font-family:var(--f-body);font-size:var(--fs-base);line-height:1.75;color:var(--c-body);background:var(--c-bg);-webkit-font-smoothing:antialiased}
@@ -173,8 +169,33 @@ p{margin:0 0 var(--s-4)}ul,ol{margin:0 0 var(--s-5);padding-left:1.5em}li{margin
     .lead-in{font-size:var(--fs-base);color:var(--c-ink);font-weight:500;margin-top:var(--s-2);margin-bottom:var(--s-4);letter-spacing:-0.005em}
     .lead-in strong{font-weight:600;color:var(--c-ink)}
   .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:var(--s-5) 0}.table-wrap .data-table{margin:0;min-width:480px}.content-with-sidebar>*,.post-layout>*{min-width:0}img{max-width:100%;height:auto}
+
+/* repair patch */
+.brand__mark{width:auto;min-width:40px;padding:0 8px;letter-spacing:.02em;white-space:nowrap}
+.nav-toggle{display:none;background:var(--c-ink);color:#fff;border:0;border-radius:var(--r-md);padding:10px 14px;font-weight:600;font-size:.9rem;cursor:pointer;font-family:inherit}
+.mob-drawer{position:fixed;top:0;right:0;bottom:0;width:min(86vw,340px);background:#fff;z-index:200;transform:translateX(100%);transition:transform .2s;padding:24px;overflow-y:auto;box-shadow:-8px 0 24px rgba(0,0,0,.2);visibility:hidden}
+.mob-drawer.open{transform:none;visibility:visible}
+.mob-overlay{position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,.45);z-index:199;display:none}
+.mob-overlay.open{display:block}
+.mob-drawer a{display:block;padding:12px 0;border-bottom:1px solid var(--c-rule);color:var(--c-ink);text-decoration:none;font-weight:600}
+.mob-drawer a.mob-call{background:var(--c-red);color:#fff;text-align:center;border-radius:var(--r-pill);margin-top:16px;border:0;padding:14px}
+.mob-close{background:none;border:0;font-size:1.6rem;line-height:1;float:right;cursor:pointer;color:var(--c-ink)}
+.sticky-call{display:none}
+@media(max-width:820px){.nav-toggle{display:inline-block}.nav__call{display:none}
+.sticky-call{display:block;position:fixed;left:0;right:0;bottom:0;z-index:150;background:var(--c-red);color:#fff;text-align:center;font-weight:700;padding:14px;text-decoration:none}
+body{padding-bottom:52px}}
+.also-serving,.also-offered,.more-guides{margin-top:var(--s-6);padding:var(--s-4) var(--s-5);background:var(--c-surface);border:1px solid var(--c-rule);border-radius:var(--r-md);font-size:var(--fs-sm)}
+.sourced-section{border-left:4px solid var(--c-red);padding:var(--s-4) var(--s-5);margin:var(--s-6) 0;background:var(--c-surface);border-radius:0 var(--r-md) var(--r-md) 0}
+.source-line{font-size:var(--fs-sm);color:var(--c-muted);margin-top:var(--s-3)}
+.source-line a{color:var(--c-ink);text-decoration:underline}
+.img-figure{margin:var(--s-5) 0}.img-figure img{width:100%;height:auto;border-radius:var(--r-md)}
+.img-figure figcaption{font-size:var(--fs-xs);color:var(--c-muted)}
+.prose-list{padding-left:1.25rem}
+.h4{font-size:var(--fs-lg);font-weight:700}
+.sources-box{margin-top:var(--s-6);padding:var(--s-4) var(--s-5);border:1px solid var(--c-rule);border-radius:var(--r-md);background:var(--c-surface);font-size:var(--fs-sm);color:var(--c-muted)}
+.sources-box a{color:var(--c-ink);text-decoration:underline}
 </style>
-</head>
+<style>.byline{font-size:.85rem;color:#5b6470;margin:.5rem 0 1rem}</style></head>
 <body>
 <header class="site-header">
   <div class="site-header__inner">
@@ -182,9 +203,12 @@ p{margin:0 0 var(--s-4)}ul,ol{margin:0 0 var(--s-5);padding-left:1.5em}li{margin
     <nav class="nav" aria-label="Primary">
       <div class="nav__links"><a href="/">Home</a><a href="/services/">Services</a><a href="/areas/">Areas</a><a href="/blog/">Blog</a></div>
       <a href="tel:8062073665" class="nav__call">(806) 207-3665</a>
-    </nav>
+    </nav><button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mobMenu">Menu</button>
   </div>
 </header>
+<div class="mob-overlay" id="mobOverlay"></div>
+<div class="mob-drawer" id="mobMenu" aria-label="Mobile menu"><button class="mob-close" type="button" aria-label="Close menu">&times;</button>
+<a href="/">Home</a><a href="/services/">Services</a><a href="/areas/">Areas</a><a href="/blog/">Blog</a><a href="/about">About</a><a href="/contact">Contact</a><a class="mob-call" href="tel:8062073665">Call (806) 207-3665</a></div>
 <div class="breadcrumbs"><div class="container">
   <a href="/">Home</a><span class="breadcrumbs__sep">/</span>
   <a href="/blog/">Blog</a><span class="breadcrumbs__sep">/</span>
@@ -195,7 +219,7 @@ p{margin:0 0 var(--s-4)}ul,ol{margin:0 0 var(--s-5);padding-left:1.5em}li{margin
   <div class="post-hero__inner">
     <div class="post-hero__text">
       <a href="/blog/" class="post-tag">Exclusion</a>
-      <h1 style="margin-top:var(--s-4)">Common Entry Points for Rats in Lubbock Houses: Roof Vents, Garages, and Foundations</h1>
+      <h1 style="margin-top:var(--s-4)">Common Entry Points for Rats in Lubbock Houses: Roof Vents, Garages, and Foundations</h1><div class="byline">Written by Lubbock Rodent Control. Updated November 2026.</div>
       <div class="post-meta">
         <span>By <strong>Lubbock Rodent Control</strong></span>
         <span>·</span>
@@ -214,10 +238,10 @@ p{margin:0 0 var(--s-4)}ul,ol{margin:0 0 var(--s-5);padding-left:1.5em}li{margin
       <article class="post-body">
         <p>Understanding where rats enter a Lubbock home is the foundation of an effective exclusion program. Entry points for roof rats and Norway rats are distinct: they access structures at different elevations and through different gap types. This guide covers every common entry point we find during inspections in Lubbock residential construction, organized by location and species.</p>
 
-<h2>Roof-line entry points (roof rats).</h2>
+<h2>Roof-line entry points (roof rats).</h2><p>Roof rats climb, so their entries sit at the roof line and in the attic.</p>
 
 <h3>Soffit vents.</h3>
-<p>The most consistent roof-rat entry point in Lubbock. Soffit vents are designed with screening to allow attic airflow while blocking pests, but the plastic and fiberglass screening used in most residential construction degrades in West Texas UV and temperature conditions within 3-5 years. We find cracked, missing, or pulled-away vent screening on a majority of Lubbock homes we inspect. <strong>Fix:</strong> Hardware cloth (1/4-inch galvanized mesh) installed behind or inside the vent frame. Not replacement plastic screening, that will fail again.</p>
+<p>We find cracked, missing, or pulled-away vent screening on a majority of Lubbock homes we inspect. <strong>Fix:</strong> Hardware cloth (1/4-inch galvanized mesh) installed behind or inside the vent frame. Not replacement plastic screening, that will fail again.</p>
 
 <h3>Fascia-sheathing gap.</h3>
 <p>The junction between the fascia board (the vertical board at the roof edge) and the roof sheathing (the plywood or OSB surface the shingles are attached to) develops a gap as the fascia wood dries and shrinks over time. On homes older than 20-30 years, this gap is often 1/2 inch or larger, enough for a roof rat to compress through. It's not visible from the ground; you need to look up from a ladder or from the attic interior to see it. <strong>Fix:</strong> Sheet metal blocking or wood blocking with mesh, fastened to both the fascia and sheathing surfaces.</p>
@@ -228,13 +252,11 @@ p{margin:0 0 var(--s-4)}ul,ol{margin:0 0 var(--s-5);padding-left:1.5em}li{margin
 <h3>Pipe and conduit penetrations at the roof.</h3>
 <p>Water heater flue pipes, dryer vent boots, plumbing vent pipes, and electrical conduit penetrations through the roof surface each have a potential gap around the circumference where the pipe or conduit exits through the roofing material. In older installations, the original boot or flashing may have pulled away from the pipe surface, creating a gap. <strong>Fix:</strong> Foam backer rod fill plus sealant for smaller gaps; hardware cloth backing before sealing for larger gaps.</p>
 
-<h2>Foundation-level entry points (mice and Norway rats).</h2>
+<h2>Foundation-level entry points (mice and Norway rats).</h2><p>Mice and Norway rats stay low, so their entries sit at the foundation line and ground level.</p>
 
 <h3>Weep holes.</h3>
-<p>The single most underestimated entry point in Lubbock residential construction. Brick-veneer homes have weep holes, small drainage gaps in the mortar line at the base of the brick, spaced every 24-32 inches around the full perimeter. They're 3/4 inch wide and open directly into the wall cavity. Every standard Lubbock brick home has 40-80 of them. Most homeowners have never heard of them. Most pest programs don't address them. <strong>Fix:</strong> Copper mesh pressed into every weep hole. Copper specifically, not steel wool, not foam.</p>
-        <div class="inline-cta-box">
-          <strong>Need a free inspection?</strong> Call <a href="tel:8062073665">(806)&nbsp;207-3665</a>, same-day service available across Lubbock County and 24 nearby South Plains towns.
-        </div>
+<p>Brick-veneer homes have weep holes, small drainage gaps in the mortar line at the base of the brick, spaced every 24-32 inches around the full perimeter. They're 3/4 inch wide and open directly into the wall cavity. Most homeowners have never heard of them. Most pest programs don't address them. <strong>Fix:</strong> Copper mesh pressed into every weep hole. Copper specifically, not steel wool, not foam.</p>
+        
         
 
 <h3>Utility pipe penetrations.</h3>
@@ -249,18 +271,22 @@ p{margin:0 0 var(--s-4)}ul,ol{margin:0 0 var(--s-5);padding-left:1.5em}li{margin
 <h3>Norway rat-specific: drain covers and sewer access.</h3>
 <p>Norway rats in older downtown Lubbock and near sewer-adjacent infrastructure exploit drain cover gaps and worn sewer line joints to access buildings from below. Floor drains with missing or cracked covers, and any drain-cover gap at the foundation perimeter, are potential Norway rat access points. <strong>Fix:</strong> Replace missing drain covers; seal gaps at foundation-level drain cover perimeters with concrete patch and mesh.</p>
 
-<div class="callout"><p>See our <a href="/services/rodent-exclusion-services">exclusion service</a> for professional inspection and sealing of all of the above. Free inspection, before-and-after photo documentation, permanent materials.</p></div>
+<div class="callout"><p>See our <a href="/services/rodent-exclusion-services">exclusion service</a> for professional inspection and sealing of all of the above. Inspection, before-and-after photo documentation, permanent materials.</p></div>
 
         
         <div class="sourced-section">
           <h2>Gap sizes and sealing materials from public guidance</h2>
-          <p>Public health and Extension sources agree on the scale of the problem. The CDC says rats can fit through a hole about half the size of a quarter, and Texas A&amp;M AgriLife Extension lists a 1/2-inch crack under a door as enough for a rat and a 1/4-inch crack enough for a mouse.</p>
+          <p>Public health and Extension sources agree on the scale of the problem.</p>
           <p>For sealing, Extension names hardware cloth and a rust-proof fill fabric sold in strips for roof lines and similar gaps. The practical rule is to check every roof vent, garage door seal, utility penetration, and foundation gap against those measurements, then seal with material a rodent cannot chew through.</p>
           <p class="source-line"><strong>Source:</strong> <a href="https://extensionentomology.tamu.edu/wp-content/uploads/sites/8/2022/05/Rodent-IPM.pdf" rel="noopener" target="_blank">Texas A&amp;M AgriLife Extension, Rodent IPM</a>; <a href="https://cybercemetery.unt.edu/oilspill/20121008030427mp_/http://www.cdc.gov/Features/Rodents/index.html" rel="noopener" target="_blank">CDC, Got Mice? Seal, Trap, and Clean Up (archived)</a>. Cited for: gap sizes and sealing materials from public guidance.</p>
         </div>
-        <div class="cta-banner">
+        <section class="sourced-section"><h2>The sizes to check</h2><p>The two numbers worth carrying are from the Texas A&amp;M guide. A mouse can enter through a dime sized hole or a quarter inch crack under a door. A rat needs a quarter sized hole or a half inch crack. Hold a dime or a quarter against any gap and it gives you an answer in a few seconds.</p><p>The usual suspects are garage door seals that have worn through, gaps where gas lines and cables enter the wall, dryer and bath fan vents without screens, and the corner where a foundation meets framing. Roof rats add a second set: the roof line, soffit vents and any place a branch or wire touches the house.</p><p class="source-line">Source for "The sizes to check" (published guidelines): <a href="https://extensionentomology.tamu.edu/wp-content/uploads/sites/8/2022/05/Rodent-IPM.pdf" rel="noopener">Texas A&amp;M AgriLife Extension, Rodent IPM</a>.</p></section>
+<section class="sourced-section"><h2>A walk-around checklist you can do in an hour</h2><p>Start outside at ground level and work up. Check the foundation line for burrow openings, since Norway rats burrow near food and water. Check every vent and utility entry for gaps of a half inch or more. Then look at the roof line, where roof rats arrive through vegetation and trees touching the house. Inside, check the garage door seal and the gap under any exterior door against a quarter, which is the size a rat can use. Mark each gap with tape, photograph it and repair it with hardware cloth or rust-proof fill fabric. A second walk after a heavy rain shows what the first one missed, because new burrows tend to appear where water collects.</p><p class="source-line">Source for "A walk-around checklist you can do in an hour" (published guidelines): <a href="https://extensionentomology.tamu.edu/wp-content/uploads/sites/8/2022/05/Rodent-IPM.pdf" rel="noopener">Texas A&amp;M AgriLife Extension, Rodent IPM</a>.</p></section>
+<section class="sourced-section"><h2>Why a sealed entry still fails</h2><p>A repair fails when the material is chewable or when the gap is only partly closed. Check each repair after a week. Rodents gnaw at the edge of a patch, so a crescent of fresh shavings around a plug means the patch is soft or too small. Replace it with hardware cloth sized beyond the gap and fixed on all sides.</p><p class="source-line">Source for "Why a sealed entry still fails" (published guidelines): <a href="https://extensionentomology.tamu.edu/wp-content/uploads/sites/8/2022/05/Rodent-IPM.pdf" rel="noopener">Texas A&amp;M AgriLife Extension, Rodent IPM</a>.</p></section>
+<section class="sourced-section"><h2>Safety checklist when you inspect</h2><p>Inspecting means reaching into gaps and dusty spaces. The CDC advises avoiding dust from droppings, so inspect with care.</p><p>What to do:</p><ul class="prose-list"><li>Wear gloves and a mask in attics and crawl spaces.</li><li>Do not sweep or vacuum droppings.</li><li>Photograph each gap before sealing.</li><li>Do not work on a roof alone.</li></ul><p class="source-line">Source for "Safety checklist when you inspect" (published guidelines): <a href="https://www.cdc.gov/healthy-pets/rodent-control/clean-up.html" rel="noopener">CDC, How to Clean Up After Rodents</a>.</p></section>
+<div class="cta-banner">
           <h2>Find Your Home&#x27;s Entry Points: (806) 207-3665</h2>
-          <p>Free inspection across Lubbock County. Quotes confirmed before work starts. Open 24/7.</p>
+          <p>Inspection across Lubbock County. Open 24/7.</p>
           <a href="tel:8062073665" class="btn btn--primary btn--lg">Call (806) 207-3665</a>
         </div>
         <p class="more-guides" style="margin-top:var(--s-6)"><strong>More guides:</strong> <a href="/blog/cost-of-rodent-control-in-lubbock-tx-pricing-for-rat-and-mice-removal-explained">Cost of Rodent Control in Lubbock</a>; <a href="/blog/house-mouse-biology-lubbock-winter-behavior">House mouse biology and winter behavior in Lubbock, TX, why they always come back</a>; <a href="/blog/professional-rodent-exclusion-permanently-stop-infestations-lubbock">Guide: Rodent Exclusion in Lubbock: How to Stop Infestations</a>.</p>
@@ -270,11 +296,11 @@ p{margin:0 0 var(--s-4)}ul,ol{margin:0 0 var(--s-5);padding-left:1.5em}li{margin
         <div class="sidebar-card">
           <h3 class="h4">Need help now?</h3>
           <a href="tel:8062073665" class="big-phone">(806) 207-3665</a>
-          <p style="font-size:var(--fs-sm);color:var(--c-muted);margin:0">Open 24/7. Free inspection. Same-day available.</p>
+          <p style="font-size:var(--fs-sm);color:var(--c-muted);margin:0">Open 24/7. Inspection. Serving Lubbock.</p>
         </div>
         <div class="sidebar-card">
           <h3 style="margin-bottom:var(--s-3)" class="h4">Our services</h3>
-          <ul class="sidebar-links"><li><a href="/services/rat-control-services">Rat Control Services</a></li><li><a href="/services/mice-control-services">Mice Control Services</a></li><li><a href="/services/rodent-exclusion-services">Rodent Exclusion</a></li><li><a href="/services/emergency-rodent-removal">Emergency Removal</a></li><li><a href="/services/rodent-inspection-services">Free Inspection</a></li></ul>
+          <ul class="sidebar-links"><li><a href="/services/rat-control-services">Rat Control Services</a></li><li><a href="/services/mice-control-services">Mice Control Services</a></li><li><a href="/services/rodent-exclusion-services">Rodent Exclusion</a></li><li><a href="/services/emergency-rodent-removal">Emergency Removal</a></li><li><a href="/services/rodent-inspection-services">Inspection</a></li></ul>
         </div>
         <div class="sidebar-card">
           <h3 style="margin-bottom:var(--s-3)" class="h4">Service areas</h3>
@@ -298,16 +324,14 @@ p{margin:0 0 var(--s-4)}ul,ol{margin:0 0 var(--s-5);padding-left:1.5em}li{margin
         <address><strong>Lubbock Rodent Control</strong>1621 Hilltop Drive<br>Lubbock, TX 79401<br><br><a href="tel:8062073665">(806) 207-3665</a><br>contact@rodentcontrollubbock.com<br><br><em>Open 24/7</em></address>
       </div>
       <div class="footer-col">
-        <h3 class="h4">Services (28)</h3>
+        <h3 class="h4">Services (27)</h3>
         <ul class="footer-list">
-          <li><a href="/services/rat-control-services">Rat Control</a></li><li><a href="/services/mice-control-services">Mice Control</a></li><li><a href="/services/rodent-removal-services">Rodent Removal</a></li><li><a href="/services/emergency-rodent-removal">Emergency Removal</a></li><li><a href="/services/same-day-rat-removal">Same-Day Rat Removal</a></li><li><a href="/services/mouse-infestation-treatment">Mouse Infestation Treatment</a></li><li><a href="/services/residential-rodent-control">Residential</a></li><li><a href="/services/commercial-rodent-control">Commercial</a></li><li><a href="/services/apartment-property-management-rodent-control">Apartments</a></li><li><a href="/services/warehouse-rodent-control">Warehouse</a></li><li><a href="/services/rodent-exclusion-services">Rodent Exclusion</a></li><li><a href="/services/rat-proofing-services">Rat Proofing</a></li><li><a href="/services/mouse-proofing-sealing-entry-points">Mouse Proofing</a></li><li><a href="/services/crawl-space-rodent-sealing">Crawl-Space Sealing</a></li><li><a href="/services/attic-rodent-proofing">Attic Proofing</a></li><li><a href="/services/rodent-droppings-cleanup">Droppings Cleanup</a></li><li><a href="/services/rat-nest-removal">Rat Nest Removal</a></li><li><a href="/services/attic-rodent-cleanup-sanitization">Attic Cleanup</a></li><li><a href="/services/insulation-replacement-after-rodent-damage">Insulation Replacement</a></li><li><a href="/services/rodent-inspection-services">Rodent Inspection</a></li><li><a href="/services/roof-rat-removal-services">Roof Rat Removal</a></li><li><a href="/services/norway-rat-control-services">Norway Rat Control</a></li><li><a href="/services/dead-rodent-removal-services">Dead Rodent Removal</a></li><li><a href="/services/agricultural-property-rodent-control">Agricultural Property</a></li><li><a href="/services/oilfield-property-rodent-control">Oilfield Property</a></li><li><a href="/services/restaurant-rodent-control-services">Restaurant</a></li><li><a href="/services/storage-unit-rodent-control-services">Storage Unit</a></li><li><a href="/services/rodent-bait-station-installation">Bait Station Installation</a></li>
+          <li><a href="/services/rat-control-services">Rat Control</a></li><li><a href="/services/mice-control-services">Mice Control</a></li><li><a href="/services/rodent-removal-services">Rodent Removal</a></li><li><a href="/services/emergency-rodent-removal">Emergency Removal</a></li><li><a href="/services/mouse-infestation-treatment">Mouse Infestation Treatment</a></li><li><a href="/services/residential-rodent-control">Residential</a></li><li><a href="/services/commercial-rodent-control">Commercial</a></li><li><a href="/services/apartment-property-management-rodent-control">Apartments</a></li><li><a href="/services/warehouse-rodent-control">Warehouse</a></li><li><a href="/services/rodent-exclusion-services">Rodent Exclusion</a></li><li><a href="/services/rat-proofing-services">Rat Proofing</a></li><li><a href="/services/mouse-proofing-sealing-entry-points">Mouse Proofing</a></li><li><a href="/services/crawl-space-rodent-sealing">Crawl-Space Sealing</a></li><li><a href="/services/attic-rodent-proofing">Attic Proofing</a></li><li><a href="/services/rodent-droppings-cleanup">Droppings Cleanup</a></li><li><a href="/services/rat-nest-removal">Rat Nest Removal</a></li><li><a href="/services/attic-rodent-cleanup-sanitization">Attic Cleanup</a></li><li><a href="/services/insulation-replacement-after-rodent-damage">Insulation Replacement</a></li><li><a href="/services/rodent-inspection-services">Rodent Inspection</a></li><li><a href="/services/roof-rat-removal-services">Roof Rat Removal</a></li><li><a href="/services/norway-rat-control-services">Norway Rat Control</a></li><li><a href="/services/dead-rodent-removal-services">Dead Rodent Removal</a></li><li><a href="/services/agricultural-property-rodent-control">Agricultural Property</a></li><li><a href="/services/oilfield-property-rodent-control">Oilfield Property</a></li><li><a href="/services/restaurant-rodent-control-services">Restaurant</a></li><li><a href="/services/storage-unit-rodent-control-services">Storage Unit</a></li><li><a href="/services/rodent-bait-station-installation">Bait Station Installation</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h3 class="h4">Service Areas (55)</h3>
-        <ul class="footer-list footer-list--area">
-          <li><a href="/areas/arnett-benson">Arnett Benson</a></li><li><a href="/areas/ballenger">Ballenger</a></li><li><a href="/areas/bowie">Bowie</a></li><li><a href="/areas/caprock">Caprock</a></li><li><a href="/areas/clapp-park">Clapp Park</a></li><li><a href="/areas/coronado">Coronado</a></li><li><a href="/areas/downtown">Downtown</a></li><li><a href="/areas/dunbar-manhattan-heights">Dunbar Man. Hts.</a></li><li><a href="/areas/fairview">Fairview</a></li><li><a href="/areas/heart-of-lubbock">Heart of Lubbock</a></li><li><a href="/areas/jackson-mahon">Jackson Mahon</a></li><li><a href="/areas/kings-park">Kings Park</a></li><li><a href="/areas/maedgen-area">Maedgen Area</a></li><li><a href="/areas/maxey-park">Maxey Park</a></li><li><a href="/areas/medical-district">Medical District</a></li><li><a href="/areas/melody-heights">Melody Heights</a></li><li><a href="/areas/north-by-northwest">North by NW</a></li><li><a href="/areas/overton">Overton</a></li><li><a href="/areas/parkway-and-cherry-point">Parkway/Cherry Pt.</a></li><li><a href="/areas/raintree">Raintree</a></li><li><a href="/areas/regal-park">Regal Park</a></li><li><a href="/areas/slaton-bean">Slaton Bean</a></li><li><a href="/areas/stubbs-stewart">Stubbs Stewart</a></li><li><a href="/areas/tech-terrace">Tech Terrace</a></li><li><a href="/areas/university-pines">University Pines</a></li><li><a href="/areas/waters">Waters</a></li><li><a href="/areas/west-end">West End</a></li><li><a href="/areas/westchester-park">Westchester Park</a></li><li><a href="/areas/wester">Wester</a></li><li><a href="/areas/wheelock-and-monterey">Wheelock/Monterey</a></li><li><a href="/areas/windsor-park">Windsor Park</a></li><li><a href="/areas/levelland">Levelland</a></li><li><a href="/areas/wolfforth">Wolfforth</a></li><li><a href="/areas/slaton">Slaton</a></li><li><a href="/areas/littlefield">Littlefield</a></li><li><a href="/areas/post">Post</a></li><li><a href="/areas/shallowater">Shallowater</a></li><li><a href="/areas/abernathy">Abernathy</a></li><li><a href="/areas/floydada">Floydada</a></li><li><a href="/areas/tahoka">Tahoka</a></li><li><a href="/areas/idalou">Idalou</a></li><li><a href="/areas/hale-center">Hale Center</a></li><li><a href="/areas/olton">Olton</a></li><li><a href="/areas/ralls">Ralls</a></li><li><a href="/areas/crosbyton">Crosbyton</a></li><li><a href="/areas/lorenzo">Lorenzo</a></li><li><a href="/areas/wilson">Wilson</a></li><li><a href="/areas/anton">Anton</a></li><li><a href="/areas/sundown">Sundown</a></li><li><a href="/areas/petersburg">Petersburg</a></li><li><a href="/areas/ropesville">Ropesville</a></li><li><a href="/areas/amherst">Amherst</a></li><li><a href="/areas/ransom-canyon">Ransom Canyon</a></li><li><a href="/areas/smyer">Smyer</a></li><li><a href="/areas/new-deal">New Deal</a></li>
-        </ul>
+        <h3 class="h4">Service Areas (52)</h3>
+        <ul class="footer-list footer-list--area"><li><a href="/areas/arnett-benson">Arnett Benson</a></li><li><a href="/areas/ballenger">Ballenger</a></li><li><a href="/areas/bowie">Bowie</a></li><li><a href="/areas/caprock">Caprock</a></li><li><a href="/areas/clapp-park">Clapp Park</a></li><li><a href="/areas/coronado">Coronado</a></li><li><a href="/areas/downtown">Downtown Lubbock</a></li><li><a href="/areas/dunbar-manhattan-heights">Dunbar Manhattan Heights</a></li><li><a href="/areas/fairview">Fairview</a></li><li><a href="/areas/heart-of-lubbock">Heart of Lubbock</a></li><li><a href="/areas/jackson-mahon">Jackson Mahon</a></li><li><a href="/areas/kings-park">Kings Park</a></li><li><a href="/areas/maedgen-area">Maedgen Area</a></li><li><a href="/areas/maxey-park">Maxey Park</a></li><li><a href="/areas/medical-district">Medical District</a></li><li><a href="/areas/melody-heights">Melody Heights</a></li><li><a href="/areas/north-by-northwest">North by Northwest</a></li><li><a href="/areas/overton">Overton</a></li><li><a href="/areas/parkway-and-cherry-point">Parkway and Cherry Point</a></li><li><a href="/areas/raintree">Raintree</a></li><li><a href="/areas/regal-park">Regal Park</a></li><li><a href="/areas/slaton-bean">Slaton Bean</a></li><li><a href="/areas/stubbs-stewart">Stubbs Stewart</a></li><li><a href="/areas/tech-terrace">Tech Terrace</a></li><li><a href="/areas/university-pines">University Pines</a></li><li><a href="/areas/waters">Waters</a></li><li><a href="/areas/west-end">West End</a></li><li><a href="/areas/westchester-park">Westchester Park</a></li><li><a href="/areas/wester">Wester</a></li><li><a href="/areas/wheelock-and-monterey">Wheelock and Monterey</a></li><li><a href="/areas/windsor-park">Windsor Park</a></li><li><a href="/areas/abernathy">Abernathy</a></li><li><a href="/areas/anton">Anton</a></li><li><a href="/areas/crosbyton">Crosbyton</a></li><li><a href="/areas/hale-center">Hale Center</a></li><li><a href="/areas/idalou">Idalou</a></li><li><a href="/areas/levelland">Levelland</a></li><li><a href="/areas/littlefield">Littlefield</a></li><li><a href="/areas/lorenzo">Lorenzo</a></li><li><a href="/areas/new-deal">New Deal</a></li><li><a href="/areas/petersburg">Petersburg</a></li><li><a href="/areas/post">Post</a></li><li><a href="/areas/ralls">Ralls</a></li><li><a href="/areas/ransom-canyon">Ransom Canyon</a></li><li><a href="/areas/ropesville">Ropesville</a></li><li><a href="/areas/shallowater">Shallowater</a></li><li><a href="/areas/slaton">Slaton</a></li><li><a href="/areas/smyer">Smyer</a></li><li><a href="/areas/sundown">Sundown</a></li><li><a href="/areas/tahoka">Tahoka</a></li><li><a href="/areas/wilson">Wilson</a></li><li><a href="/areas/wolfforth">Wolfforth</a></li></ul>
       </div>
     </div>
     <div class="footer-bottom">
@@ -318,5 +342,5 @@ p{margin:0 0 var(--s-4)}ul,ol{margin:0 0 var(--s-5);padding-left:1.5em}li{margin
 </footer>
 <a href="tel:8062073665" class="sticky-call">📞 Call (806) 207-3665 · Open 24/7</a>
 
-</body>
+<a class="sticky-call" href="tel:8062073665">Call (806) 207-3665</a><script>(function(){var b=document.getElementById('navToggle'),d=document.getElementById('mobMenu'),o=document.getElementById('mobOverlay');if(!b||!d||!o)return;function s(x){d.classList.toggle('open',x);o.classList.toggle('open',x);b.setAttribute('aria-expanded',x?'true':'false');document.documentElement.style.overflow=x?'hidden':''}b.addEventListener('click',function(){s(!d.classList.contains('open'))});o.addEventListener('click',function(){s(false)});var c=d.querySelector('.mob-close');if(c)c.addEventListener('click',function(){s(false)});document.addEventListener('keydown',function(e){if(e.key==='Escape')s(false)})})();</script></body>
 </html>

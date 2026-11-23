@@ -38,13 +38,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script type="application/ld+json">
-  {"@context": "https://schema.org", "@type": "Article", "headline": "Rodent Problems Near Agricultural Areas in Lubbock, TX", "datePublished": "2026-11-17", "dateModified": "2026-11-17", "author": {"@type": "Person", "name": "Lubbock Rodent Control", "url": "https://rodentcontrollubbock.com/about"}, "publisher": {"@type": "Organization", "name": "Lubbock Rodent Control", "url": "https://rodentcontrollubbock.com/"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://rodentcontrollubbock.com/blog/rodent-problems-near-agricultural-areas-lubbock"}, "image": "https://rodentcontrollubbock.com/images/blog/blog-agricultural-pressure.jpg"}</script>
+  {"@context": "https://schema.org", "@type": "Article", "headline": "Rodent Problems Near Agricultural Areas in Lubbock, TX", "datePublished": "2026-11-17", "dateModified": "2026-11-23", "author": {"@type": "Person", "name": "Lubbock Rodent Control", "url": "https://rodentcontrollubbock.com/about"}, "publisher": {"@type": "Organization", "name": "Lubbock Rodent Control", "url": "https://rodentcontrollubbock.com/"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://rodentcontrollubbock.com/blog/rodent-problems-near-agricultural-areas-lubbock"}, "image": "https://rodentcontrollubbock.com/images/blog/blog-agricultural-pressure.jpg"}</script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
-    {"@type":"ListItem","position":1,"name":"Home","item":"https://rodentcontrollubbock.com/"},
-    {"@type":"ListItem","position":2,"name":"Blog","item":"https://rodentcontrollubbock.com/blog/"},
-    {"@type":"ListItem","position":3,"name":"Rodent Problems Near Agricultural Areas in Lubbock","item":"https://rodentcontrollubbock.com/blog/rodent-problems-near-agricultural-areas-lubbock"}
-  ]}</script>
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://rodentcontrollubbock.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://rodentcontrollubbock.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Rodent Problems Near Agricultural Areas in Lubbock", "item": "https://rodentcontrollubbock.com/blog/rodent-problems-near-agricultural-areas-lubbock"}]}</script>
   <style>:root{--c-ink:#0F1419;--c-ink-soft:#2A2F36;--c-body:#2D3138;--c-muted:#5A6068;--c-rule:#E2E4E7;--c-surface:#FFFFFF;--c-bg:#FFFFFF;--c-bg-alt:#F4F4F4;--c-red:#CC0000;--c-red-deep:#A30000;--c-red-tint:#FFF0F0;--f-display:"Roboto Slab",Georgia,serif;--f-body:"Source Sans 3",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--fs-xs:.8125rem;--fs-sm:.9375rem;--fs-base:1.0625rem;--fs-lg:1.1875rem;--fs-2xl:1.75rem;--fs-3xl:2.25rem;--fs-4xl:2.875rem;--s-1:.25rem;--s-2:.5rem;--s-3:.75rem;--s-4:1rem;--s-5:1.5rem;--s-6:2rem;--s-7:3rem;--s-8:4rem;--s-9:6rem;--r-sm:4px;--r-md:6px;--r-lg:10px;--r-pill:999px;--sh-pop:0 4px 16px rgba(15,20,25,.10);--container:1180px;--container-narrow:840px}
 *,*::before,*::after{box-sizing:border-box}
 body{margin:0;font-family:var(--f-body);font-size:var(--fs-base);line-height:1.75;color:var(--c-body);background:var(--c-bg);-webkit-font-smoothing:antialiased}
@@ -173,8 +169,33 @@ p{margin:0 0 var(--s-4)}ul,ol{margin:0 0 var(--s-5);padding-left:1.5em}li{margin
     .lead-in{font-size:var(--fs-base);color:var(--c-ink);font-weight:500;margin-top:var(--s-2);margin-bottom:var(--s-4);letter-spacing:-0.005em}
     .lead-in strong{font-weight:600;color:var(--c-ink)}
   .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:var(--s-5) 0}.table-wrap .data-table{margin:0;min-width:480px}.content-with-sidebar>*,.post-layout>*{min-width:0}img{max-width:100%;height:auto}
+
+/* repair patch */
+.brand__mark{width:auto;min-width:40px;padding:0 8px;letter-spacing:.02em;white-space:nowrap}
+.nav-toggle{display:none;background:var(--c-ink);color:#fff;border:0;border-radius:var(--r-md);padding:10px 14px;font-weight:600;font-size:.9rem;cursor:pointer;font-family:inherit}
+.mob-drawer{position:fixed;top:0;right:0;bottom:0;width:min(86vw,340px);background:#fff;z-index:200;transform:translateX(100%);transition:transform .2s;padding:24px;overflow-y:auto;box-shadow:-8px 0 24px rgba(0,0,0,.2);visibility:hidden}
+.mob-drawer.open{transform:none;visibility:visible}
+.mob-overlay{position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,.45);z-index:199;display:none}
+.mob-overlay.open{display:block}
+.mob-drawer a{display:block;padding:12px 0;border-bottom:1px solid var(--c-rule);color:var(--c-ink);text-decoration:none;font-weight:600}
+.mob-drawer a.mob-call{background:var(--c-red);color:#fff;text-align:center;border-radius:var(--r-pill);margin-top:16px;border:0;padding:14px}
+.mob-close{background:none;border:0;font-size:1.6rem;line-height:1;float:right;cursor:pointer;color:var(--c-ink)}
+.sticky-call{display:none}
+@media(max-width:820px){.nav-toggle{display:inline-block}.nav__call{display:none}
+.sticky-call{display:block;position:fixed;left:0;right:0;bottom:0;z-index:150;background:var(--c-red);color:#fff;text-align:center;font-weight:700;padding:14px;text-decoration:none}
+body{padding-bottom:52px}}
+.also-serving,.also-offered,.more-guides{margin-top:var(--s-6);padding:var(--s-4) var(--s-5);background:var(--c-surface);border:1px solid var(--c-rule);border-radius:var(--r-md);font-size:var(--fs-sm)}
+.sourced-section{border-left:4px solid var(--c-red);padding:var(--s-4) var(--s-5);margin:var(--s-6) 0;background:var(--c-surface);border-radius:0 var(--r-md) var(--r-md) 0}
+.source-line{font-size:var(--fs-sm);color:var(--c-muted);margin-top:var(--s-3)}
+.source-line a{color:var(--c-ink);text-decoration:underline}
+.img-figure{margin:var(--s-5) 0}.img-figure img{width:100%;height:auto;border-radius:var(--r-md)}
+.img-figure figcaption{font-size:var(--fs-xs);color:var(--c-muted)}
+.prose-list{padding-left:1.25rem}
+.h4{font-size:var(--fs-lg);font-weight:700}
+.sources-box{margin-top:var(--s-6);padding:var(--s-4) var(--s-5);border:1px solid var(--c-rule);border-radius:var(--r-md);background:var(--c-surface);font-size:var(--fs-sm);color:var(--c-muted)}
+.sources-box a{color:var(--c-ink);text-decoration:underline}
 </style>
-</head>
+<style>.byline{font-size:.85rem;color:#5b6470;margin:.5rem 0 1rem}</style></head>
 <body>
 <header class="site-header">
   <div class="site-header__inner">
@@ -182,9 +203,12 @@ p{margin:0 0 var(--s-4)}ul,ol{margin:0 0 var(--s-5);padding-left:1.5em}li{margin
     <nav class="nav" aria-label="Primary">
       <div class="nav__links"><a href="/">Home</a><a href="/services/">Services</a><a href="/areas/">Areas</a><a href="/blog/">Blog</a></div>
       <a href="tel:8062073665" class="nav__call">(806) 207-3665</a>
-    </nav>
+    </nav><button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mobMenu">Menu</button>
   </div>
 </header>
+<div class="mob-overlay" id="mobOverlay"></div>
+<div class="mob-drawer" id="mobMenu" aria-label="Mobile menu"><button class="mob-close" type="button" aria-label="Close menu">&times;</button>
+<a href="/">Home</a><a href="/services/">Services</a><a href="/areas/">Areas</a><a href="/blog/">Blog</a><a href="/about">About</a><a href="/contact">Contact</a><a class="mob-call" href="tel:8062073665">Call (806) 207-3665</a></div>
 <div class="breadcrumbs"><div class="container">
   <a href="/">Home</a><span class="breadcrumbs__sep">/</span>
   <a href="/blog/">Blog</a><span class="breadcrumbs__sep">/</span>
@@ -195,7 +219,7 @@ p{margin:0 0 var(--s-4)}ul,ol{margin:0 0 var(--s-5);padding-left:1.5em}li{margin
   <div class="post-hero__inner">
     <div class="post-hero__text">
       <a href="/blog/" class="post-tag">Agricultural</a>
-      <h1 style="margin-top:var(--s-4)">Rodent Problems Near Agricultural Areas in Lubbock, TX</h1>
+      <h1 style="margin-top:var(--s-4)">Rodent Problems Near Agricultural Areas in Lubbock, TX</h1><div class="byline">Written by Lubbock Rodent Control. Updated November 2026.</div>
       <div class="post-meta">
         <span>By <strong>Lubbock Rodent Control</strong></span>
         <span>·</span>
@@ -215,14 +239,12 @@ p{margin:0 0 var(--s-4)}ul,ol{margin:0 0 var(--s-5);padding-left:1.5em}li{margin
         <p>Lubbock County's agricultural character creates a rodent pressure dimension that doesn't exist in more purely urban markets. Properties near active farmland: whether residential subdivisions built into former cotton fields, oilfield operations near agricultural land, or the rural properties that haven't been developed, experience rodent pressure from a much larger reservoir than urban properties face. This guide covers why agricultural-edge pressure is different and what it means for control approaches.</p>
 
 <h2>The agricultural rodent reservoir.</h2>
-<p>Active farmland sustains large field rodent colonies through the growing season. Cotton, sorghum, and grain fields provide both food (from the crop itself and from post-harvest residue) and shelter (in crop canopy during the growing season, in straw and residue after harvest). These field populations are primarily field mice (Mus musculus and Peromyscus species), but Norway rat colonies near grain storage and feed operations can be large and persistent.</p>
+<p>Active farmland sustains large field rodent colonies through the growing season. Cotton, sorghum, and grain fields provide both food (from the crop itself and from post-harvest residue) and shelter (in crop canopy during the growing season, in straw and residue after harvest).</p>
 <p>The reservoir population adjacent to a developing subdivision or rural property is orders of magnitude larger than the urban rodent colony near a central Lubbock neighborhood. A 100-acre cotton field on the edge of Wolfforth can sustain several thousand field mice. When cold weather or harvest disruption pushes that colony toward residential construction at the field edge, the colony pressure is substantially higher than anything a mid-city Lubbock neighborhood faces.</p>
 
 <h2>Harvest-season displacement.</h2>
 <p>Cotton and grain harvest in October and November, which coincides with the cold-front season for roof-rat pressure, creates additional displacement pressure. Harvest machines disturb the field population; residue management removes shelter; and the disruption pushes large numbers of field mice toward the nearest alternative shelter, which is residential construction at the field edge. The intersection of cold-front season, harvest season, and agricultural-edge location produces the highest rodent pressure in the service area.</p>
-        <div class="inline-cta-box">
-          <strong>Need a free inspection?</strong> Call <a href="tel:8062073665">(806)&nbsp;207-3665</a>, same-day service available across Lubbock County and 24 nearby South Plains towns.
-        </div>
+        
         
 
 <h2>What agricultural-edge programs look like differently.</h2>
@@ -236,13 +258,17 @@ p{margin:0 0 var(--s-4)}ul,ol{margin:0 0 var(--s-5);padding-left:1.5em}li{margin
         
         <div class="sourced-section">
           <h2>What Extension guidance says about field-edge pressure</h2>
-          <p>Texas A&amp;M AgriLife Extension notes that Norway rats can travel up to 450 feet from a burrow and that exterior infestations are usually linked to trash and food sources. House mice, by contrast, usually stay within 10 to 30 feet of the nest.</p>
+          <p>House mice, by contrast, usually stay within 10 to 30 feet of the nest.</p>
           <p>Near fields and grain storage, that means a property can sit within reach of established burrows without any visible problem. Keeping trash and feed in closed containers away from the house, and closing every gap larger than 1/4 inch, limits what follows rodents in when the fields change.</p>
           <p class="source-line"><strong>Source:</strong> <a href="https://extensionentomology.tamu.edu/wp-content/uploads/sites/8/2022/05/Rodent-IPM.pdf" rel="noopener" target="_blank">Texas A&amp;M AgriLife Extension, Rodent IPM</a>. Cited for: what Extension guidance says about field-edge pressure.</p>
         </div>
-        <div class="cta-banner">
+        <section class="sourced-section"><h2>Feed storage and field edges</h2><p>The Texas A&amp;M guide says rats nest in burrows near food and water and may travel up to 450 feet. Property next to a field, a gin or a grain bin sits within that range of a large supply. Keep trash 30 feet from buildings, store pet and bird feed in sealed containers, and clear brush piles and stacked materials that give burrows cover.</p><p class="source-line">Source for "Feed storage and field edges" (published guidelines): <a href="https://extensionentomology.tamu.edu/wp-content/uploads/sites/8/2022/05/Rodent-IPM.pdf" rel="noopener">Texas A&amp;M AgriLife Extension, Rodent IPM</a>.</p></section>
+<section class="sourced-section"><h2>What to ask your neighbors</h2><p>Rats range up to 450 feet from a burrow, so a neighbor&#x27;s open feed storage can supply your yard. A short conversation and a shared sealing plan work better than treating one property in isolation.</p><p class="source-line">Source for "What to ask your neighbors" (published guidelines): <a href="https://extensionentomology.tamu.edu/wp-content/uploads/sites/8/2022/05/Rodent-IPM.pdf" rel="noopener">Texas A&amp;M AgriLife Extension, Rodent IPM</a>.</p></section>
+<section class="sourced-section"><h2>Pets and livestock feed</h2><p>Pet food and livestock feed are the two most common food sources on rural properties. Store both in sealed metal or hard plastic bins, and clean up spilled feed daily.</p><p class="source-line">Source for "Pets and livestock feed" (published guidelines): <a href="https://extensionentomology.tamu.edu/wp-content/uploads/sites/8/2022/05/Rodent-IPM.pdf" rel="noopener">Texas A&amp;M AgriLife Extension, Rodent IPM</a>.</p></section>
+<section class="sourced-section"><h2>What to do before you call</h2><p>If you see signs of rodents in your property, document them first: photograph droppings, gnaw marks and gaps, and avoid touching anything. Note any safety concerns, such as a closed attic or a damaged wall. Then call (806) 207-3665 to schedule an inspection, and the process can start from your notes.</p></section>
+<div class="cta-banner">
           <h2>Farmland Next Door? Call (806) 207-3665</h2>
-          <p>Free inspection across Lubbock County. Quotes confirmed before work starts. Open 24/7.</p>
+          <p>Inspection across Lubbock County. Open 24/7.</p>
           <a href="tel:8062073665" class="btn btn--primary btn--lg">Call (806) 207-3665</a>
         </div>
         <p class="more-guides" style="margin-top:var(--s-6)"><strong>More guides:</strong> <a href="/blog/rodent-problems-worse-after-rain-lubbock">Why Rodent Problems Get Worse After Rain in Lubbock</a>; <a href="/blog/tech-terrace-roof-rat-guide-lubbock">Tech Terrace roof rats: why mature trees and older homes draw them</a>; <a href="/blog/why-rats-invade-lubbock-homes-during-cold-fronts">Guide: Why Rats Invade Lubbock Homes During Cold Fronts</a>.</p>
@@ -255,17 +281,17 @@ p{margin:0 0 var(--s-4)}ul,ol{margin:0 0 var(--s-5);padding-left:1.5em}li{margin
       <p>Standard residential rodent programs are designed around a bounded infestation: identify the current population, eliminate it, and seal entry points to prevent recurrence. Agricultural-edge programs require a continuous-pressure model instead, because the reservoir source (adjacent farmland) never goes away. This means perimeter bait station programs designed to intercept field rodents before they reach the structure, rather than interior trap programs designed to eliminate an established interior population. It means monitoring visits timed to the agricultural calendar: October harvest inspection, February post-winter inspection, June wheat-harvest inspection for properties adjacent to winter wheat. And it means exclusion work that accounts for the volume of pressure rather than just the current infestation: more weep-hole sealing, more foundation vent screening, and more attention to door-threshold gaps than a standard residential program requires.</p>
       
       <h2>Which Lubbock-area properties are most at risk: and why.</h2>
-      <p>Agricultural-edge rodent pressure is not evenly distributed across Lubbock County. The highest-risk properties share a specific combination of characteristics: direct adjacency to active farmland (close to a cultivated field), older construction with degraded exclusion barriers, and the absence of a maintained vegetation buffer between the structure and the field edge. New construction in Wolfforth, Shallowater, and the south Lubbock Loop 289 expansion zone, where residential development has moved into former cotton fields, is a growing category of agricultural-edge properties. These properties don't have the history of entry-point accumulation that older construction does, but they sit directly at the field interface in a way that decades-old interior Lubbock construction does not. For established construction in Abernathy, Floydada, Hale Center, and similar Hockley and Floyd County communities, the risk is high because both conditions are present: direct field adjacency and decades of entry-point accumulation. The combination is more challenging than either factor alone.</p>
+      <p>Agricultural-edge rodent pressure is not evenly distributed across Lubbock County. The highest-risk properties share a specific combination of characteristics: direct adjacency to active farmland (close to a cultivated field), older construction with degraded exclusion barriers, and the absence of a maintained vegetation buffer between the structure and the field edge. These properties don't have the history of entry-point accumulation that older construction does, but they sit directly at the field interface in a way that decades-old interior Lubbock construction does not. For established construction in Abernathy, Floydada, Hale Center, and similar Hockley and Floyd County communities, the risk is high because both conditions are present: direct field adjacency and decades of entry-point accumulation. The combination is more challenging than either factor alone.</p>
       </article>
       <aside class="sidebar">
         <div class="sidebar-card">
           <h3 class="h4">Need help now?</h3>
           <a href="tel:8062073665" class="big-phone">(806) 207-3665</a>
-          <p style="font-size:var(--fs-sm);color:var(--c-muted);margin:0">Open 24/7. Free inspection. Same-day available.</p>
+          <p style="font-size:var(--fs-sm);color:var(--c-muted);margin:0">Open 24/7. Inspection. Serving Lubbock.</p>
         </div>
         <div class="sidebar-card">
           <h3 style="margin-bottom:var(--s-3)" class="h4">Our services</h3>
-          <ul class="sidebar-links"><li><a href="/services/rat-control-services">Rat Control Services</a></li><li><a href="/services/mice-control-services">Mice Control Services</a></li><li><a href="/services/rodent-exclusion-services">Rodent Exclusion</a></li><li><a href="/services/emergency-rodent-removal">Emergency Removal</a></li><li><a href="/services/rodent-inspection-services">Free Inspection</a></li></ul>
+          <ul class="sidebar-links"><li><a href="/services/rat-control-services">Rat Control Services</a></li><li><a href="/services/mice-control-services">Mice Control Services</a></li><li><a href="/services/rodent-exclusion-services">Rodent Exclusion</a></li><li><a href="/services/emergency-rodent-removal">Emergency Removal</a></li><li><a href="/services/rodent-inspection-services">Inspection</a></li></ul>
         </div>
         <div class="sidebar-card">
           <h3 style="margin-bottom:var(--s-3)" class="h4">Service areas</h3>
@@ -289,16 +315,14 @@ p{margin:0 0 var(--s-4)}ul,ol{margin:0 0 var(--s-5);padding-left:1.5em}li{margin
         <address><strong>Lubbock Rodent Control</strong>1621 Hilltop Drive<br>Lubbock, TX 79401<br><br><a href="tel:8062073665">(806) 207-3665</a><br>contact@rodentcontrollubbock.com<br><br><em>Open 24/7</em></address>
       </div>
       <div class="footer-col">
-        <h3 class="h4">Services (28)</h3>
+        <h3 class="h4">Services (27)</h3>
         <ul class="footer-list">
-          <li><a href="/services/rat-control-services">Rat Control</a></li><li><a href="/services/mice-control-services">Mice Control</a></li><li><a href="/services/rodent-removal-services">Rodent Removal</a></li><li><a href="/services/emergency-rodent-removal">Emergency Removal</a></li><li><a href="/services/same-day-rat-removal">Same-Day Rat Removal</a></li><li><a href="/services/mouse-infestation-treatment">Mouse Infestation Treatment</a></li><li><a href="/services/residential-rodent-control">Residential</a></li><li><a href="/services/commercial-rodent-control">Commercial</a></li><li><a href="/services/apartment-property-management-rodent-control">Apartments</a></li><li><a href="/services/warehouse-rodent-control">Warehouse</a></li><li><a href="/services/rodent-exclusion-services">Rodent Exclusion</a></li><li><a href="/services/rat-proofing-services">Rat Proofing</a></li><li><a href="/services/mouse-proofing-sealing-entry-points">Mouse Proofing</a></li><li><a href="/services/crawl-space-rodent-sealing">Crawl-Space Sealing</a></li><li><a href="/services/attic-rodent-proofing">Attic Proofing</a></li><li><a href="/services/rodent-droppings-cleanup">Droppings Cleanup</a></li><li><a href="/services/rat-nest-removal">Rat Nest Removal</a></li><li><a href="/services/attic-rodent-cleanup-sanitization">Attic Cleanup</a></li><li><a href="/services/insulation-replacement-after-rodent-damage">Insulation Replacement</a></li><li><a href="/services/rodent-inspection-services">Rodent Inspection</a></li><li><a href="/services/roof-rat-removal-services">Roof Rat Removal</a></li><li><a href="/services/norway-rat-control-services">Norway Rat Control</a></li><li><a href="/services/dead-rodent-removal-services">Dead Rodent Removal</a></li><li><a href="/services/agricultural-property-rodent-control">Agricultural Property</a></li><li><a href="/services/oilfield-property-rodent-control">Oilfield Property</a></li><li><a href="/services/restaurant-rodent-control-services">Restaurant</a></li><li><a href="/services/storage-unit-rodent-control-services">Storage Unit</a></li><li><a href="/services/rodent-bait-station-installation">Bait Station Installation</a></li>
+          <li><a href="/services/rat-control-services">Rat Control</a></li><li><a href="/services/mice-control-services">Mice Control</a></li><li><a href="/services/rodent-removal-services">Rodent Removal</a></li><li><a href="/services/emergency-rodent-removal">Emergency Removal</a></li><li><a href="/services/mouse-infestation-treatment">Mouse Infestation Treatment</a></li><li><a href="/services/residential-rodent-control">Residential</a></li><li><a href="/services/commercial-rodent-control">Commercial</a></li><li><a href="/services/apartment-property-management-rodent-control">Apartments</a></li><li><a href="/services/warehouse-rodent-control">Warehouse</a></li><li><a href="/services/rodent-exclusion-services">Rodent Exclusion</a></li><li><a href="/services/rat-proofing-services">Rat Proofing</a></li><li><a href="/services/mouse-proofing-sealing-entry-points">Mouse Proofing</a></li><li><a href="/services/crawl-space-rodent-sealing">Crawl-Space Sealing</a></li><li><a href="/services/attic-rodent-proofing">Attic Proofing</a></li><li><a href="/services/rodent-droppings-cleanup">Droppings Cleanup</a></li><li><a href="/services/rat-nest-removal">Rat Nest Removal</a></li><li><a href="/services/attic-rodent-cleanup-sanitization">Attic Cleanup</a></li><li><a href="/services/insulation-replacement-after-rodent-damage">Insulation Replacement</a></li><li><a href="/services/rodent-inspection-services">Rodent Inspection</a></li><li><a href="/services/roof-rat-removal-services">Roof Rat Removal</a></li><li><a href="/services/norway-rat-control-services">Norway Rat Control</a></li><li><a href="/services/dead-rodent-removal-services">Dead Rodent Removal</a></li><li><a href="/services/agricultural-property-rodent-control">Agricultural Property</a></li><li><a href="/services/oilfield-property-rodent-control">Oilfield Property</a></li><li><a href="/services/restaurant-rodent-control-services">Restaurant</a></li><li><a href="/services/storage-unit-rodent-control-services">Storage Unit</a></li><li><a href="/services/rodent-bait-station-installation">Bait Station Installation</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h3 class="h4">Service Areas (55)</h3>
-        <ul class="footer-list footer-list--area">
-          <li><a href="/areas/arnett-benson">Arnett Benson</a></li><li><a href="/areas/ballenger">Ballenger</a></li><li><a href="/areas/bowie">Bowie</a></li><li><a href="/areas/caprock">Caprock</a></li><li><a href="/areas/clapp-park">Clapp Park</a></li><li><a href="/areas/coronado">Coronado</a></li><li><a href="/areas/downtown">Downtown</a></li><li><a href="/areas/dunbar-manhattan-heights">Dunbar Man. Hts.</a></li><li><a href="/areas/fairview">Fairview</a></li><li><a href="/areas/heart-of-lubbock">Heart of Lubbock</a></li><li><a href="/areas/jackson-mahon">Jackson Mahon</a></li><li><a href="/areas/kings-park">Kings Park</a></li><li><a href="/areas/maedgen-area">Maedgen Area</a></li><li><a href="/areas/maxey-park">Maxey Park</a></li><li><a href="/areas/medical-district">Medical District</a></li><li><a href="/areas/melody-heights">Melody Heights</a></li><li><a href="/areas/north-by-northwest">North by NW</a></li><li><a href="/areas/overton">Overton</a></li><li><a href="/areas/parkway-and-cherry-point">Parkway/Cherry Pt.</a></li><li><a href="/areas/raintree">Raintree</a></li><li><a href="/areas/regal-park">Regal Park</a></li><li><a href="/areas/slaton-bean">Slaton Bean</a></li><li><a href="/areas/stubbs-stewart">Stubbs Stewart</a></li><li><a href="/areas/tech-terrace">Tech Terrace</a></li><li><a href="/areas/university-pines">University Pines</a></li><li><a href="/areas/waters">Waters</a></li><li><a href="/areas/west-end">West End</a></li><li><a href="/areas/westchester-park">Westchester Park</a></li><li><a href="/areas/wester">Wester</a></li><li><a href="/areas/wheelock-and-monterey">Wheelock/Monterey</a></li><li><a href="/areas/windsor-park">Windsor Park</a></li><li><a href="/areas/levelland">Levelland</a></li><li><a href="/areas/wolfforth">Wolfforth</a></li><li><a href="/areas/slaton">Slaton</a></li><li><a href="/areas/littlefield">Littlefield</a></li><li><a href="/areas/post">Post</a></li><li><a href="/areas/shallowater">Shallowater</a></li><li><a href="/areas/abernathy">Abernathy</a></li><li><a href="/areas/floydada">Floydada</a></li><li><a href="/areas/tahoka">Tahoka</a></li><li><a href="/areas/idalou">Idalou</a></li><li><a href="/areas/hale-center">Hale Center</a></li><li><a href="/areas/olton">Olton</a></li><li><a href="/areas/ralls">Ralls</a></li><li><a href="/areas/crosbyton">Crosbyton</a></li><li><a href="/areas/lorenzo">Lorenzo</a></li><li><a href="/areas/wilson">Wilson</a></li><li><a href="/areas/anton">Anton</a></li><li><a href="/areas/sundown">Sundown</a></li><li><a href="/areas/petersburg">Petersburg</a></li><li><a href="/areas/ropesville">Ropesville</a></li><li><a href="/areas/amherst">Amherst</a></li><li><a href="/areas/ransom-canyon">Ransom Canyon</a></li><li><a href="/areas/smyer">Smyer</a></li><li><a href="/areas/new-deal">New Deal</a></li>
-        </ul>
+        <h3 class="h4">Service Areas (52)</h3>
+        <ul class="footer-list footer-list--area"><li><a href="/areas/arnett-benson">Arnett Benson</a></li><li><a href="/areas/ballenger">Ballenger</a></li><li><a href="/areas/bowie">Bowie</a></li><li><a href="/areas/caprock">Caprock</a></li><li><a href="/areas/clapp-park">Clapp Park</a></li><li><a href="/areas/coronado">Coronado</a></li><li><a href="/areas/downtown">Downtown Lubbock</a></li><li><a href="/areas/dunbar-manhattan-heights">Dunbar Manhattan Heights</a></li><li><a href="/areas/fairview">Fairview</a></li><li><a href="/areas/heart-of-lubbock">Heart of Lubbock</a></li><li><a href="/areas/jackson-mahon">Jackson Mahon</a></li><li><a href="/areas/kings-park">Kings Park</a></li><li><a href="/areas/maedgen-area">Maedgen Area</a></li><li><a href="/areas/maxey-park">Maxey Park</a></li><li><a href="/areas/medical-district">Medical District</a></li><li><a href="/areas/melody-heights">Melody Heights</a></li><li><a href="/areas/north-by-northwest">North by Northwest</a></li><li><a href="/areas/overton">Overton</a></li><li><a href="/areas/parkway-and-cherry-point">Parkway and Cherry Point</a></li><li><a href="/areas/raintree">Raintree</a></li><li><a href="/areas/regal-park">Regal Park</a></li><li><a href="/areas/slaton-bean">Slaton Bean</a></li><li><a href="/areas/stubbs-stewart">Stubbs Stewart</a></li><li><a href="/areas/tech-terrace">Tech Terrace</a></li><li><a href="/areas/university-pines">University Pines</a></li><li><a href="/areas/waters">Waters</a></li><li><a href="/areas/west-end">West End</a></li><li><a href="/areas/westchester-park">Westchester Park</a></li><li><a href="/areas/wester">Wester</a></li><li><a href="/areas/wheelock-and-monterey">Wheelock and Monterey</a></li><li><a href="/areas/windsor-park">Windsor Park</a></li><li><a href="/areas/abernathy">Abernathy</a></li><li><a href="/areas/anton">Anton</a></li><li><a href="/areas/crosbyton">Crosbyton</a></li><li><a href="/areas/hale-center">Hale Center</a></li><li><a href="/areas/idalou">Idalou</a></li><li><a href="/areas/levelland">Levelland</a></li><li><a href="/areas/littlefield">Littlefield</a></li><li><a href="/areas/lorenzo">Lorenzo</a></li><li><a href="/areas/new-deal">New Deal</a></li><li><a href="/areas/petersburg">Petersburg</a></li><li><a href="/areas/post">Post</a></li><li><a href="/areas/ralls">Ralls</a></li><li><a href="/areas/ransom-canyon">Ransom Canyon</a></li><li><a href="/areas/ropesville">Ropesville</a></li><li><a href="/areas/shallowater">Shallowater</a></li><li><a href="/areas/slaton">Slaton</a></li><li><a href="/areas/smyer">Smyer</a></li><li><a href="/areas/sundown">Sundown</a></li><li><a href="/areas/tahoka">Tahoka</a></li><li><a href="/areas/wilson">Wilson</a></li><li><a href="/areas/wolfforth">Wolfforth</a></li></ul>
       </div>
     </div>
     <div class="footer-bottom">
@@ -309,5 +333,5 @@ p{margin:0 0 var(--s-4)}ul,ol{margin:0 0 var(--s-5);padding-left:1.5em}li{margin
 </footer>
 <a href="tel:8062073665" class="sticky-call">📞 Call (806) 207-3665 · Open 24/7</a>
 
-</body>
+<a class="sticky-call" href="tel:8062073665">Call (806) 207-3665</a><script>(function(){var b=document.getElementById('navToggle'),d=document.getElementById('mobMenu'),o=document.getElementById('mobOverlay');if(!b||!d||!o)return;function s(x){d.classList.toggle('open',x);o.classList.toggle('open',x);b.setAttribute('aria-expanded',x?'true':'false');document.documentElement.style.overflow=x?'hidden':''}b.addEventListener('click',function(){s(!d.classList.contains('open'))});o.addEventListener('click',function(){s(false)});var c=d.querySelector('.mob-close');if(c)c.addEventListener('click',function(){s(false)});document.addEventListener('keydown',function(e){if(e.key==='Escape')s(false)})})();</script></body>
 </html>
